@@ -13,4 +13,5 @@ public class Main {
         System.out.println("Total cats: " + Cat.getCatCount());
         System.out.println("Total dogs: " + Dog.getDogCount());
     }
+
 }
