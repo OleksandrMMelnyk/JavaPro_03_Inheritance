@@ -1,28 +1,28 @@
 public class Dog extends Animals {
 
     private static int dogCount = 0;
-    private final int maxDistanceRun = 500;
-    private final int maxDistanceSwim = 10;
+    private final int maxRunDistance = 500;
+    private final int maxSwimDistance = 10;
 
     public Dog() {
-        dogCount +=1;
+        dogCount += 1;
     }
 
     @Override
     public void animalDistRun(int dist) {
-        if (dist <= maxDistanceRun) {
+        if (dist <= maxRunDistance) {
             System.out.println("Dog run distance - " + dist + "m");
         } else {
-            System.out.println("Dog run only " + maxDistanceRun + "m");
+            System.out.println("Dog run only " + maxRunDistance + "m");
         }
     }
 
     @Override
     public void animalDistSwim(int dist) {
-        if (dist <= maxDistanceRun) {
+        if (dist <= maxRunDistance) {
             System.out.println("Dog swim distance - " + dist + "m");
         } else {
-            System.out.println("Dog swim only " + maxDistanceSwim + "m");
+            System.out.println("Dog swim only " + maxSwimDistance + "m");
         }
     }
 
